@@ -70,6 +70,7 @@ class AccountToBottomSheetFragment : BottomSheetDialogFragment() {
 
         state.accountList?.let { account ->
             accountDetailsFetchedListener?.onAccountDetailsFetched(account)
+            handleSuccess()
             dismiss()
         }
     }
